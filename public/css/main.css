@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #222E50;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.post-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.post-wrapper h1 {
+  font-size: 5rem;
+  color: #FCCB06;
+}
+
+.post-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto;
+  transition: all 0.2s;
+  animation: appear 2s ease-in-out;
+}
+.post-list .single-post {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.post-list .single-post h2 {
+  font-size: 3rem;
+  color: #FCCB06;
+}
+.post-list .single-post p {
+  color: #EDF7F6;
+}
+.post-list .single-post__user a {
+  color: #FCCB06;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.post-list .single-post__user a:hover {
+  color: #EDF7F6;
+}
+
+.user-info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.user-info-wrapper h2 {
+  font-size: 3rem;
+  color: #FCCB06;
+}
+
+.user-info {
+  font-size: 2rem;
+  color: #FCCB06;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto;
+  animation: ease-in-out 2s appear;
+}
+.user-info .user-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+}
+.user-info .user-form__input {
+  padding: 1rem;
+  border: none;
+}
+.user-info .user-form__input--patch {
+  background-color: #FCCB06;
+  color: #222E50;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.user-info .user-form__input--patch:hover {
+  transform: scale(0.9);
+}
+.user-info .user-form__input--delete {
+  background-color: red;
+  color: #EDF7F6;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.user-info .user-form__input--delete:hover {
+  transform: scale(0.9);
+}
+.user-info a {
+  text-decoration: none;
+  color: #EDF7F6;
+}/*# sourceMappingURL=main.css.map */

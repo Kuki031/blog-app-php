@@ -1,0 +1,13 @@
+@mixin flexBox($direction, $alignX, $alignY, $gap) {
+    display: flex;
+    align-items: $alignY;
+    justify-content: $alignX;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    gap: $gap;
+    margin: auto;
+}
+
+@mixin prepareAnimation ($transition) {
+    transition: all $transition;
+}

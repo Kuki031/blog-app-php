@@ -1,0 +1,47 @@
+@import '_variables';
+@import '_mixins';
+@import '_keyframes';
+
+.post-wrapper {
+
+    h1 {
+        font-size: 5rem;
+        color: $color-primary;
+    }
+
+    @include flexBox(column, center, center, 2.5rem);
+    margin-top: 2rem;
+}
+
+
+.post-list {
+    @include flexBox(column, flex-start, flex-start, 2.5rem);
+    @include prepareAnimation(.2s);
+    animation: appear 2s ease-in-out;
+
+    .single-post {
+        padding: 1rem;
+        font-size: $font-size-paragraphs;
+
+        h2 {
+            font-size: $font-size-headers;
+            color: $color-primary;
+        }
+
+        p {
+            color: $color-ternary;
+        }
+
+        &__user {
+            a {
+                color: $color-primary;
+                text-decoration: none;
+                transition: all .2s;
+
+                &:hover {
+                    color: $color-ternary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.user-info-wrapper {
+    @include flexBox(column, center, center, 2rem);
+    margin-top: 2rem;
+
+    h2 {
+        font-size: $font-size-headers;
+        color: $color-primary;
+    }
+}
+
+.user-info {
+    font-size: $font-size-paragraphs;
+    color: $color-primary;
+    @include flexBox(column, center, center, 2.5rem);
+    animation: ease-in-out 2s appear;
+
+    .user-form {
+        @include flexBox(column, center, center, 1.5rem);
+
+        &__input {
+            padding: 1rem;
+            border: none;
+        }
+
+        &__input--patch {
+            background-color: $color-primary;
+            color: $color-secondary;
+            border-radius: .5rem;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+
+        &__input--delete {
+            background-color: red;
+            color: $color-ternary;
+            border-radius: .5rem;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-ternary;
+    }
+}
