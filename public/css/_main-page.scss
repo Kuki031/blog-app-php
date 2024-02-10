@@ -19,6 +19,24 @@
     @include prepareAnimation(.2s);
     animation: appear 2s ease-in-out;
 
+    .create-actions {
+        @include flexBox(row, center, space-between, 2.5rem);
+
+        &__anchor {
+            text-decoration: none;
+            color: $color-secondary;
+            padding: 1rem;
+            background-color: $color-primary;
+            transition: all .2s;
+            font-size: $font-size-paragraphs;
+            font-family: inherit;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+
     .single-post {
         padding: 1rem;
         font-size: $font-size-paragraphs;
@@ -30,6 +48,13 @@
 
         p {
             color: $color-ternary;
+        }
+
+        &__post {
+            a {
+                text-decoration: none;
+                font-size: $font-size-paragraphs;
+            }
         }
 
         &__user {

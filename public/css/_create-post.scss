@@ -1,0 +1,59 @@
+.create-post {
+    @include flexBox(column, center, center, 2.5rem);
+    margin-top: 2rem;
+    animation: appear 2s ease-in-out;
+
+    h2 {
+        font-size: $font-size-headers;
+        color: $color-primary
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-ternary;
+        font-size: $font-size-paragraphs;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+}
+
+.create-post-form {
+    @include flexBox(column, center, center, 1.5rem);
+
+    span {
+        font-size: $font-size-paragraphs;
+        color: $color-primary;
+    }
+
+    &__input {
+        border: none;
+        padding: 1rem;
+        text-align: center;
+
+        &::placeholder {
+            text-align: center;
+        }
+
+        &--content {
+            text-align: start;
+
+            &::placeholder {
+                text-align: start;
+            }
+        }
+
+        &--createpost {
+            transition: all .2s;
+            cursor: pointer;
+            color: $color-secondary;
+            background-color: $color-primary;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+}

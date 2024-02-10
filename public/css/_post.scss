@@ -1,0 +1,68 @@
+@import '_variables';
+
+.post-div {
+    @include flexBox(column, center, center, 2rem);
+    margin: auto;
+    margin-top: 2rem;
+    animation: appear ease-in-out 2s;
+
+    a {
+        text-decoration: none;
+        font-size: $font-size-paragraphs;
+        color: $color-ternary;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    h2 {
+        font-size: $font-size-headers;
+        color: $color-primary;
+    }
+
+    .post-form__update {
+        &--deletebtn {
+            background-color: red;
+            color: $color-ternary;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+.post-form {
+    @include flexBox(column, center, center, 1.5rem);
+
+    span {
+        font-size: $font-size-paragraphs;
+        font-family: inherit;
+        color: $color-primary;
+    }
+
+    &__update {
+        border: none;
+        text-align: center;
+        padding: 1rem;
+
+        &--textarea {
+            text-align: start;
+        }
+
+        &--updatebtn {
+            cursor: pointer;
+            transition: all .2s;
+            background-color: $color-primary;
+            color: $color-secondary;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+}

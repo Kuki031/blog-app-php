@@ -50,6 +50,27 @@ body {
   transition: all 0.2s;
   animation: appear 2s ease-in-out;
 }
+.post-list .create-actions {
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  margin: auto;
+}
+.post-list .create-actions__anchor {
+  text-decoration: none;
+  color: #222E50;
+  padding: 1rem;
+  background-color: #FCCB06;
+  transition: all 0.2s;
+  font-size: 2rem;
+  font-family: inherit;
+}
+.post-list .create-actions__anchor:hover {
+  transform: scale(0.9);
+}
 .post-list .single-post {
   padding: 1rem;
   font-size: 2rem;
@@ -60,6 +81,10 @@ body {
 }
 .post-list .single-post p {
   color: #EDF7F6;
+}
+.post-list .single-post__post a {
+  text-decoration: none;
+  font-size: 2rem;
 }
 .post-list .single-post__user a {
   color: #FCCB06;
@@ -133,4 +158,218 @@ body {
 .user-info a {
   text-decoration: none;
   color: #EDF7F6;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.create-user-btn {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #FCCB06;
+  color: #222E50;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.create-user-btn:hover {
+  transform: scale(0.9);
+}
+
+.create-user-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  transition: all 0.2s;
+  animation: appear ease-in-out 2s;
+  animation-fill-mode: backwards;
+}
+.create-user-div h2 {
+  font-size: 3rem;
+  color: #FCCB06;
+}
+.create-user-div a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #EDF7F6;
+  transition: all 0.2s;
+}
+.create-user-div a:hover {
+  transform: scale(0.9);
+}
+.create-user-div .user-create-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+}
+.create-user-div .user-create-form__input {
+  text-align: center;
+  border: none;
+  padding: 1rem;
+}
+.create-user-div .user-create-form__input::-moz-placeholder {
+  text-align: center;
+  font-family: inherit;
+}
+.create-user-div .user-create-form__input::placeholder {
+  text-align: center;
+  font-family: inherit;
+}
+.create-user-div .user-create-form__input--submit {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  background-color: #FCCB06;
+}
+.create-user-div .user-create-form__input--submit:hover {
+  transform: scale(0.9);
+}
+
+.create-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  animation: appear 2s ease-in-out;
+}
+.create-post h2 {
+  font-size: 3rem;
+  color: #FCCB06;
+}
+.create-post a {
+  text-decoration: none;
+  color: #EDF7F6;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.create-post a:hover {
+  transform: scale(0.9);
+}
+
+.create-post-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+}
+.create-post-form span {
+  font-size: 2rem;
+  color: #FCCB06;
+}
+.create-post-form__input {
+  border: none;
+  padding: 1rem;
+  text-align: center;
+}
+.create-post-form__input::-moz-placeholder {
+  text-align: center;
+}
+.create-post-form__input::placeholder {
+  text-align: center;
+}
+.create-post-form__input--content {
+  text-align: start;
+}
+.create-post-form__input--content::-moz-placeholder {
+  text-align: start;
+}
+.create-post-form__input--content::placeholder {
+  text-align: start;
+}
+.create-post-form__input--createpost {
+  transition: all 0.2s;
+  cursor: pointer;
+  color: #222E50;
+  background-color: #FCCB06;
+}
+.create-post-form__input--createpost:hover {
+  transform: scale(0.9);
+}
+
+.post-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+  margin: auto;
+  margin-top: 2rem;
+  animation: appear ease-in-out 2s;
+}
+.post-div a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #EDF7F6;
+  transition: all 0.2s;
+}
+.post-div a:hover {
+  transform: scale(0.9);
+}
+.post-div h2 {
+  font-size: 3rem;
+  color: #FCCB06;
+}
+.post-div .post-form__update--deletebtn {
+  background-color: red;
+  color: #EDF7F6;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.post-div .post-form__update--deletebtn:hover {
+  transform: scale(0.9);
+}
+
+.post-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: auto;
+}
+.post-form span {
+  font-size: 2rem;
+  font-family: inherit;
+  color: #FCCB06;
+}
+.post-form__update {
+  border: none;
+  text-align: center;
+  padding: 1rem;
+}
+.post-form__update--textarea {
+  text-align: start;
+}
+.post-form__update--updatebtn {
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #FCCB06;
+  color: #222E50;
+}
+.post-form__update--updatebtn:hover {
+  transform: scale(0.9);
 }/*# sourceMappingURL=main.css.map */
